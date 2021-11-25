@@ -1,27 +1,7 @@
-function getpPermutations(index, arr) {
-    if (index == arr.length - 1) {
-         perMutation.push(arr);
-         console.log(arr);
-
-    }
-    else {
-        for (var j = index; j < arr.length; j++) {
-            arr = swap(arr, index, j);
-            getpPermutations(index + 1, arr);
-            arr = swap(arr, index, j);
-        }
-    }
-
+var car = function (model, price) {
+  this.model = model;
+  this.price = price;
+  return model + "_" + price
 }
-function swap(arr, i, j) {
-    let elem = arr[i];
-    arr[i] = arr[j];
-    arr[j] = elem;
-    return arr;
-}
-{
-    var perMutation = []
-    var arr = ["A", "B", "C"]
-    getpPermutations(0, arr);
-    console.log(perMutation);
-}
+var car1 = new car("maruti", 1000);
+var car2 = car("tata", 2000);

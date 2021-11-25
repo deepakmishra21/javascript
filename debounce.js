@@ -1,6 +1,7 @@
 function debouce(fn, debounceDelay) {
     var debounceTimer;
     return function () {
+
         clearTimeout(debounceTimer);
         debounceTimer = setTimeout(() => {
             fn.apply(this);

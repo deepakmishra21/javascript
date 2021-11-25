@@ -1,7 +1,6 @@
 
 function morganAndString(a, b) {
     var out = "";
-    debugger;
     while (a || b) {
         if (a && b) {
             var chr1 = a[0];

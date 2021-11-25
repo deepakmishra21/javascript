@@ -1,11 +1,11 @@
-function getpPermutations(index, arr,perMutation) {
+function getpPermutations(index, arr) {
     if (index == arr.length - 1) {
         perMutation.push(arr);
     }
     else {
         for (var j = index; j < arr.length; j++) {
             arr = swap(arr, index, j);
-            getpPermutations(index + 1, arr, perMutation.slice());
+            getpPermutations(index + 1, arr);
             arr = swap(arr, index, j);
         }
     }
@@ -16,7 +16,6 @@ function swap(arr, i, j) {
     arr[j] = elem;
     return arr;
 }
-var perMutation=[]
+
 var arr = ["A", "B", "C"]
-getpPermutations(0, arr,perMutation.slice());
-console.log(perMutation);
+getpPermutations(0, arr);
