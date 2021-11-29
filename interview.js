@@ -24,6 +24,7 @@ var obj2 = {
 function printMe() {
   console.log(this.name);
 }
+printMe();
 ////////////////
 
 
@@ -33,13 +34,23 @@ for (let i = 1; i <= 10; i++) {
 
 /////////////////
 
+
 console.log("demo 1");
+
 setTimeout(() => { console.log("set timeout") }, 0);
-var p = Promise.resolve([1, 2, 3]);
+
+var p = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("ok")
+  }, 0);
+});
 p.then(function (v) { console.log("promise"); });
+
 console.log("demo 2")
 
 ///////////////////////////
+var x = 5;
+var y = 5;
 var obj = {
   x: 10,
   y: 20,
@@ -115,3 +126,32 @@ if (!Function.prototype.myCall) {
     this.call(obj, ...arg);
   }
 }
+////////////////
+var counter = 1;
+function outer() {
+  var counter = 5;
+  function increase() {
+    counter++;
+  }
+  function print() {
+    console.log(counter);
+  }
+  return {
+    increase, print
+  }
+}
+var c = outer();
+c.increase();
+console.log(counter);
+c.print()
+outer().increase();
+outer().print();
+/////////////////////////
+var a = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("ok")
+  }, 1000);
+});
+a.then((data) => {
+  debugger;
+})

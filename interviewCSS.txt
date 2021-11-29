@@ -1,0 +1,27 @@
+Q; Differnce between display: none and visibility: hidden
+A: both are used to hide the element but in visiblity: hidden the element space(width and height) is still there in the dom
+Q: Difference between pseudo elements and pseudo classes
+A: Pseudo elements A CSS pseudo - element is used to style specified parts of an element.eg: :: before,:: first - letter, :: after
+   Pseudo class A pseudo - class is used to define a special state of an element.eg: : link,: hover, a: visited
+Q: What's the best place to add css in html
+A: In the head in <html>tag
+  Q: Difference between block and inline elements, also name few
+  A: block element always start from new line, takes up 100% width,can attach padding,margin properties to it eg: div
+  inline elements only take place width as it text size, also you can't attach properties to it like padding etc. eg. anchor, span
+  Q: What are preprocessor in css, what are it types. It's advantages
+  A: Sass,Scss,LEss is a preprocessor
+  Scss advantages: inheritance,variables, mixins, functions
+  Q: How to center align a div in a page
+  A: top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  Q: How to improve page load time via css
+  A: Include all images in sprite, remove duplicate css, use css minifier
+  Q: Difference b/w svg and canvas
+  A: SVG: The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define two-dimensional vector-based graphics for the web. Unlike raster image (Ex .jpg, .gif, .png, etc.), a vector image can be scaled up or down to any extent without losing the image quality.
+  Canvas: The HTML element is used to draw graphics on the fly, via scripting (usually JavaScript). The element is only a container for graphics. You must use a script to actually draw the graphics. Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+  Q: What are semantic elements and how we use in css
+  A: Elements which give some meaning to element for eg. nav, header, footer
+  Q: What is box-model in css
+  A: In CSS, the term "box model" is used when talking about design and layout.
+  The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:

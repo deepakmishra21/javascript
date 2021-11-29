@@ -1,0 +1,8 @@
+Core Javascript/ Jquery : 1.5 good in theory but not have practical knowledge.
+Asp.Net/MVC or Any other Backend Technology: 1.5 Worked in Node
+Angular.js/React/Any other Javascript Framework :  0.5 did not know basics
+REST APIs : No Idea of REST API
+SQL : 1 only CURD Operation
+Soft Skills: (Attitude,Communication, Analytical Skills) - (2,2,1)
+
+OK in theory but not have practical knowledge. Not fit for bold.
