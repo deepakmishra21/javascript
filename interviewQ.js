@@ -11,6 +11,9 @@
 //https://leetcode.com/problems/search-insert-position/
 //https://leetcode.com/problems/permutations/
 //https://leetcode.com/problems/subsets/
+// https://leetcode.com/problems/group-anagrams/submissions/
+//https://leetcode.com/problems/kth-largest-element-in-an-array/submissions/
+//https://leetcode.com/problems/longest-palindromic-substring/submissions/
 //Design clock in browser
 
 //let vs var
