@@ -1,28 +1,31 @@
 function sort(arr) {
-    quickSort(arr, 0, arr.length - 1);
-    return arr;
+  quickSort(arr, 0, arr.length - 1);
+  return arr;
 }
 function quickSort(arr, start, end) {
-    if (start >= end) {
-        return;
+  if (start >= end) {
+    return;
+  }
+  var pIndex = start;
+  let el = arr[pIndex];
+  var left = start + 1;
+  var right = end;
+  while (right >= left) {
+    let lEl = arr[left];
+    let rEl = arr[right]
+    if (lEl > el && rEl < el) {
+      arr = swap(left, right, arr)
     }
-    var pIndex = start;
-    var left = start + 1;
-    var right = end;
-    while (right >= left) {
-        if (arr[left] > arr[pIndex] && arr[right] < arr[pIndex]) {
-            arr = swap(left, right, arr)
-        }
-        if (arr[left] <= arr[pIndex]) {
-            left++;
-        }
-        if (arr[right] >= arr[pIndex]) {
-            right--;
-        }
+    if (lEl <= el) {
+      left++;
     }
-    arr = swap(pIndex, right, arr);
-    quickSort(arr, start, right - 1);
-    quickSort(arr, right + 1, end);
+    if (rEl >= el) {
+      right--;
+    }
+  }
+  arr = swap(pIndex, right, arr);
+  quickSort(arr, start, right - 1);
+  quickSort(arr, right + 1, end);
 }
 debugger;
 var sorted = sort([8, 5, 2, 9, 5, 6, 3]);
