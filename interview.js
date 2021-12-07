@@ -155,3 +155,75 @@ var a = new Promise((resolve, reject) => {
 a.then((data) => {
   debugger;
 })
+
+//////////////////////
+
+var arr = [1, 2, 3, 4];
+
+for (var i = 0; i < arr.length; i++) {
+  let a = i;
+  setTimeout(() => {
+    debugger;
+    console.log(arr[a]);
+  }, 1000)
+}
+///////////////////////////////////////
+
+setTimeout(() => { console.log("1") }, 0);
+console.log("0");
+0
+1
+
+//////////////////////////////////////
+let num = 0;
+async function increment() {
+  num += await 2;
+  console.log(num);
+}
+increment();
+num += 1;
+console.log(num);
+
+////////////////////////////////////////////////////
+
+let arr = ['a', 'A', 'C', 'Z', 'b', 'B', 'd', 'E', 'z']
+//a,C,Z,b,d,E
+
+console.log(RemoveDuplicates(arr));
+
+function RemoveDuplicates(arr) {
+
+  let map = new Map();
+  for (let i = 0; i < arr.length; i++) {
+    if (!(map.has(arr[i].toUpperCase()) || map.has(arr[i].toLowerCase())))
+      map.set(arr[i], 1);
+
+  }
+  return [...map.keys()];
+}
+
+//////////////////////////////////////////////////
+
+let i = 1;
+var j = 1;
+a();
+function a() {
+
+  console.log("1:" + t)
+  console.log("2:" + )
+  {
+    let k = 1;
+    var t = 1;
+    console.log("3:" + k);
+    console.log("4:" + t);
+  }
+  console.log("6:" + t);
+  // console.log("5:" + k);
+
+
+}
+
+console.log("7:" + t)
+console.log("8:" + k)
+
+/////////////////////////////////////////////////////////
