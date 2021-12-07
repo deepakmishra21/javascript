@@ -28,7 +28,59 @@ function add(...a) {
       return sum;
     }
   }
-
 }
 
+
 console.log(add(1, 2)(1)(3)())
+
+////////////////////////
+
+
+function curry(fn) {
+  return function add(...a) {
+    if (fn.length == [...a].length) {
+      return fn(...a);
+    }
+    else {
+      return function (...b) {
+        if (fn.length == [...a, ...b].length) {
+          return fn(...a, ...b);
+        }
+        else {
+          return add(...a, ...b)
+
+        }
+      }
+    }
+
+  }
+}
+function sum(a, b, c, d) {
+  return a + b + c + d;
+}
+
+console.log(curry(sum)(1, 2, 3)(4));
+
+
+function magic(fn) {
+  return function magic2(...firstArg) {
+    return function (...secondArg) {
+      if (secondArg.length) {
+        return magic2(...firstArg, ...secondArg);
+      }
+      else {
+        return fn(...firstArg, ...secondArg);
+      }
+    }
+  }
+}
+function multiply(...arr) {
+  debugger;
+  return console.log(arr);
+}
+function sum(...arr) {
+  debugger;
+  return console.log(arr);
+}
+console.log(magic(mul)(1, 2)(3)(4));
+console.log(magic(sum)(1, 2)(3)(4)());

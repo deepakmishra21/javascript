@@ -155,6 +155,34 @@ var a = new Promise((resolve, reject) => {
 a.then((data) => {
   debugger;
 })
+///////////////////////
+var person = { name: "deepak mishra", firstName: "deepak" }
+const { name, firstName } = person;
+const { name: firstName } = person;
+///////////////////////////
+function myNumbers() {
+  let n = 0;
+  let done = false;
+  function next() {
+    n += 10; {
+
+      if (n == 100) {
+        done: true;
+      }
+    }
+    return { value: n, done };
+  }
+  return { next, n, done };
+}
+/////////////
+this.state = {
+  count: 0,
+}
+this.setState({ count: this.state.count + 1 })
+this.setState({ count: this.state.count + 1 })
+this.setState({ count: this.state.count + 1 });
+console.log(this.state.count);
+})
 
 /////////////////////////////////////////////
 
