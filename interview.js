@@ -182,7 +182,6 @@ this.setState({ count: this.state.count + 1 })
 this.setState({ count: this.state.count + 1 })
 this.setState({ count: this.state.count + 1 });
 console.log(this.state.count);
-})
 
 /////////////////////////////////////////////
 
@@ -239,7 +238,7 @@ a();
 function a() {
 
   console.log("1:" + t)
-  console.log("2:" + )
+  console.log("2:" + k)
   {
     let k = 1;
     var t = 1;
