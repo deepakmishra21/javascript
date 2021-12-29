@@ -13,5 +13,13 @@ function frequencySort(arr) {
   }
   let out = [..._map]
   out.sort(sortFn);
+  let toReturn = [];
+  out.forEach((el) => {
+    for (let index = 0; index < el[1]; index++) {
+      toReturn.push(el[0]);
+
+    }
+  })
+  return toReturn;
 }
 console.log(frequencySort([2, 5, 2, 8, 5, 6, 8, 8]));
