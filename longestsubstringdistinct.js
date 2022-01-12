@@ -7,13 +7,15 @@ function longestSubStr(str, m) {
   let out = '';
   let toReturn = '';
   let sequences = {};
+
   for (let index = 0; index < str.length; index++) {
     let element = str[index];
     out = out + element;
     let distinctCount = getDistinctCount(out);
     if (distinctCount > m) {
       while (distinctCount > m) {
-        out = out.substring(1);
+        out = out.substring(1);//eepak
+        out = out.slice(1);//d
         distinctCount = getDistinctCount(out);
       }
     }
@@ -29,13 +31,10 @@ function longestSubStr(str, m) {
       toReturn = sequences[m];
     }
   });
-  function getDistinctCount(str, m) {
+  function getDistinctCount(str) {
     let obj = {};
     str.split('').forEach(m => {
       obj[m] = true;
-      if (Object.keys(obj).length > m) {
-        break;
-      }
     });
     return Object.keys(obj).length;
   }

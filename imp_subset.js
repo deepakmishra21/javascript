@@ -4,6 +4,7 @@ function powerSet(arr) {
     var elem = arr[i];
     var len = subset.length;
     for (var j = 0; j < len; j++) {
+      debugger;
       var currentSubset = subset[j].slice();
       currentSubset.push(elem);
       subset.push(currentSubset);

@@ -12,21 +12,10 @@ function BinarySearchTree() {
 
   }
 
-
-  function inorder(node, toFind) {
-
-  }
-  function preorder(node) {
-
-  }
-  function postorder(node) {
-
-  }
-
   function search(data, root) {
 
   }
-  return { insert, remove, inorder, preorder, postorder, search }
+  return { insert, remove, search }
 
 }
 var BST = new BinarySearchTree();
