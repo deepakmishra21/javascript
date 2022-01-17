@@ -1,6 +1,8 @@
 //Fav datastructure
 // Can we implement parent child in that data structure
 //searching and sorting techniques
+//https://leetcode.com/problems/sum-of-unique-elements/
+//https://leetcode.com/problems/merge-sorted-array/
 //https://leetcode.com/problems/power-of-three/
 //https://leetcode.com/problems/reverse-string/
 //https://leetcode.com/problems/binary-search/
@@ -11,18 +13,18 @@
 //https://leetcode.com/problems/search-insert-position/
 //https://leetcode.com/problems/permutations/
 //https://leetcode.com/problems/subsets/
-// https://leetcode.com/problems/group-anagrams/submissions/
+//https://leetcode.com/problems/group-anagrams/submissions/
 //https://leetcode.com/problems/kth-largest-element-in-an-array/submissions/
 //https://leetcode.com/problems/longest-palindromic-substring/submissions/
 //https://leetcode.com/problems/group-anagrams/
 //https://leetcode.com/problems/fizz-buzz/submissions/
 //Design clock in browser
-
+//Auto complete real time problem  using debounce
 //let vs var
 //null check in js
 //terniary conditions
 //Self invoking function
-//Hoisting
+// Hoisting
 // Self - invoking functions
 // feature of es6
 // local vs session
@@ -47,3 +49,13 @@
 // _proto_ vs prototype
 // Debounce / Throatling
 // Proxy and Reflect
+
+
+////////////////////////////////
+//package.json part
+//npm
+//life cycles
+// routing
+// webpack
+//build
+//node

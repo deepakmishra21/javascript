@@ -10,7 +10,7 @@ sayHi();
 const a = "BOLD";
 a = "BOLD 2"
 ////////////////////
-const obj1 = {
+const obj = {
   name: "My Name is BOLD"
 };
 obj.name = "BOLD";
@@ -28,7 +28,7 @@ printMe();
 ////////////////
 
 
-for (let i = 1; i <= 10; i++) {
+for (var i = 1; i <= 10; i++) {
   setTimeout(function () { console.log(i); }, 1000);
 }
 
@@ -218,18 +218,6 @@ let arr = ['a', 'A', 'C', 'Z', 'b', 'B', 'd', 'E', 'z']
 //a,C,Z,b,d,E
 
 console.log(RemoveDuplicates(arr));
-
-function RemoveDuplicates(arr) {
-
-  let map = new Map();
-  for (let i = 0; i < arr.length; i++) {
-    if (!(map.has(arr[i].toUpperCase()) || map.has(arr[i].toLowerCase())))
-      map.set(arr[i], 1);
-
-  }
-  return [...map.keys()];
-}
-
 ///////////////////////////////////////////////
 
 let i = 1;
@@ -253,3 +241,44 @@ function a() {
 
 console.log("7:" + t)
 console.log("8:" + k)
+
+///////////////////////////
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCount(count + 1);
+    }, 1000);
+    return () => clearInterval(id);
+  }, []);
+
+  return <h1>{count}</h1>;
+}
+///
+
+const debounce = (callback, delay) => {
+};
+const handleSearch = (e) => {
+  console.log(txtSearch.current.value);
+};
+const debouncedSearch = debounce(handleSearch, 1000);
+
+<input
+  placeholder="search with debounce"
+  type="text"
+  name="txtSearch"
+  ref={txtSearch}
+  onChange={debouncedSearch}
+/>
+///
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+
+  }, []);
+
+  return <h1>{count}</h1>;
+}
+/////////////////////
