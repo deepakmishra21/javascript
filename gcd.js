@@ -3,13 +3,12 @@ findGCD = function (nums) {
   return gcd(nums[0], nums[nums.length - 1])
 }
 function gcd(a, b) {
-  if (a == 0)
-    return b;
-  if (b == 0)
-    return a;
+  if (a == 0) { return b; }
+  if (b == 0) { return a; }
 
-  if (a == b)
+  if (a == b) {
     return a;
+  }
 
   if (a > b)
     return gcd(a - b, b);
