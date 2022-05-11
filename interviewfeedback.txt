@@ -1,12 +1,9 @@
-No Fit for bold.
-
-Core Javascript/ Jquery : 1 did not worked in javascript/ have only basic knowledge of jquery.
-
-Asp.Net/MVC or Any other Backend Technology:
-
-Angular.js/React/Any other Javascript Framework : 3 sound knowledge of react, Wrote a problem statement in react.
-
-REST APIs :1.5 Only basic knowledge
-SQL : 2 Only basic knowledge
-
-Soft Skills: (Attitude,Communication, Analytical Skills) - (2,2,2)
+Recommended for next round.
+Know JS basic concepts as per his experience level 1.8 years.
+Program asked- find the common element in two array, wrote the program with complexity of O(m+n)
+Core Javascript :3.5
+React/Angular : 3.5
+Java/C#: Did not asked
+REST APIs : NA
+SQL : NA
+Soft Skills: (Attitude,Communication, Analytical Skills) - (3,3,3)

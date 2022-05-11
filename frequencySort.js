@@ -17,7 +17,6 @@ function frequencySort(arr) {
   out.forEach((el) => {
     for (let index = 0; index < el[1]; index++) {
       toReturn.push(el[0]);
-
     }
   })
   return toReturn;

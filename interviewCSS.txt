@@ -24,4 +24,6 @@ A: In the head in <html>tag
   A: Elements which give some meaning to element for eg. nav, header, footer
   Q: What is box-model in css
   A: In CSS, the term "box model" is used when talking about design and layout.
-  The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+  The CSS box model is essentially a box that wraps around every HTML element.
+  It consists of: margins, borders, padding, and the actual content.
+  The image below illustrates the box model:
