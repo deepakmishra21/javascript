@@ -1,9 +1,11 @@
 ///////////////////////////
 function sayHi() {
   console.log(name);
-  console.log(age);
   var name = 'BOLD';
-  let age = 21;
+  {
+    let age = 21;
+  }
+  console.log(age);
 }
 sayHi();
 //////////////////////
@@ -178,24 +180,20 @@ function myNumbers() {
 this.state = {
   count: 0,
 }
-this.setState({ count: this.state.count + 1 })
-this.setState({ count: this.state.count + 1 })
-this.setState({ count: this.state.count + 1 });
-console.log(this.state.count);
+updateMe = () => {
+  this.setState({ count: this.state.count + 1 })
+  this.setState({ count: this.state.count + 1 })
+  this.setState({ count: this.state.count + 1 });
+  console.log(this.state.count);
+}
+this.updateMe();
 
 /////////////////////////////////////////////
 
 
-var arr = [1, 2, 3, 4];
-
-for (var i = 0; i < arr.length; i++) {
-  let a = i;
-  setTimeout(() => {
-    debugger;
-    console.log(arr[a]);
-  }, 1000)
+for (var i = 0; i < 10 i++) {
+  setTimeout(() => { console.log(i); }, 1000)
 }
-
 ////////////////////////////////
 setTimeout(() => { console.log("1") }, 0);
 console.log("0");
@@ -216,8 +214,13 @@ console.log(num);
 
 let arr = ['a', 'A', 'C', 'Z', 'b', 'B', 'd', 'E', 'z']
 //a,C,Z,b,d,E
-
+let arr = [1, 2, 3, 1, 2, 3, 1, 2, 3, 4, 5, 6, 4, 5, 6, 7, 8, 9, 7, 8, 9];
 console.log(RemoveDuplicates(arr));
+
+let arr = [9, 8, 7, 6, 1, 2, 3, 1, 2, 3, 1, 2, 3, 4, 5, 6, 4, 5, 6, 7, 8, 9, 7, 8, 9];
+let out = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+https://onecompiler.com/javascript/3xttmethh
 ///////////////////////////////////////////////
 
 let i = 1;
@@ -282,3 +285,11 @@ function Counter() {
   return <h1>{count}</h1>;
 }
 /////////////////////
+function add() {
+  var a = "OUT PUT 1";
+  {
+    var a = "OUT PUT 2";
+  }
+  console.log(a);
+}
+////////////////////

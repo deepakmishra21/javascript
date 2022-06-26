@@ -1,4 +1,5 @@
-//Fav datastructure
+//Interview Invite-Bold Technology Systems Pvt Ltd
+//Fav data structure
 // Can we implement parent child in that data structure
 //searching and sorting techniques
 //https://leetcode.com/problems/sum-of-unique-elements/
@@ -18,6 +19,13 @@
 //https://leetcode.com/problems/longest-palindromic-substring/submissions/
 //https://leetcode.com/problems/group-anagrams/
 //https://leetcode.com/problems/fizz-buzz/submissions/
+var input = 'I LOVE MY INDIA';
+var output = 'I EVOL YM AIDNI';
+var arr1 = [1, 2, 3, 4, 4];
+var arr2 = [2, 3, 4, 4, 5, 5];
+//find common element
+var a = [1, 2, 3, [3, 4, [2, 4], [5, 2, [7, -1], 3, [6, [-13, 8], 4]]]];
+var out = [1, 2, 3, 3, 4, 2, 4, 5, 2, 7, -1, 3, 6, -13, 8, 4];
 //Design clock in browser
 //Auto complete real time problem  using debounce
 //let vs var
@@ -25,14 +33,13 @@
 //terniary conditions
 //Self invoking function
 // Hoisting
-// Self - invoking functions
 // feature of es6
 // local vs session
+// arrow function use
 // call bind apply
 // bubbling capturing
 // throatling
 // debouncing
-// event loop
 // Polyfill
 // prototype
 // Curring

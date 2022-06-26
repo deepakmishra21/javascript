@@ -15,7 +15,6 @@ function longestSubStr(str, m) {
     if (distinctCount > m) {
       while (distinctCount > m) {
         out = out.substring(1);//eepak
-        out = out.slice(1);//d
         distinctCount = getDistinctCount(out);
       }
     }
