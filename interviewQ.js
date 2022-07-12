@@ -1,4 +1,4 @@
-//Interview Invite-Bold Technology Systems Pvt Ltd
+//Interview Invite - Bold Technology Systems Pvt Ltd
 //Fav data structure
 // Can we implement parent child in that data structure
 //searching and sorting techniques
@@ -21,9 +21,20 @@
 //https://leetcode.com/problems/fizz-buzz/submissions/
 var input = 'I LOVE MY INDIA';
 var output = 'I EVOL YM AIDNI';
-var arr1 = [1, 2, 3, 4, 4];
-var arr2 = [2, 3, 4, 4, 5, 5];
+//////////////////
+var arr1 = [8,1, 2, 3, 4, 4];//size of n
+var arr2 = [7,2, 3, 4, 4, 5, 5];//size of m
+var expected = [2, 3, 4];//in O(n)+O(m)
+
+var arr1 = [1, 2, 3, 5, 7, 8, 9];
+var arr2 = [2, 4, 6, 8];
+//both the array are sorted
+var out = [1, 2, 2, 3, 4, 5, 6, 7, 8];//Merge both the array and it should be sorted
+//Write a program to solve the problem.
+
+
 //find common element
+/////////////////
 var a = [1, 2, 3, [3, 4, [2, 4], [5, 2, [7, -1], 3, [6, [-13, 8], 4]]]];
 var out = [1, 2, 3, 3, 4, 2, 4, 5, 2, 7, -1, 3, 6, -13, 8, 4];
 //Design clock in browser

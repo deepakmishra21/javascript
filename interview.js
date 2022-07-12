@@ -3,11 +3,16 @@ function sayHi() {
   console.log(name);
   var name = 'BOLD';
   {
+    console.log(name);
+    console.log(age);
     let age = 21;
   }
+  console.log(name);
   console.log(age);
 }
+console.log(name);
 sayHi();
+
 //////////////////////
 const a = "BOLD";
 a = "BOLD 2"
@@ -34,6 +39,25 @@ for (var i = 1; i <= 10; i++) {
   setTimeout(function () { console.log(i); }, 1000);
 }
 
+
+function outer() {
+  var arr = [];
+  var i;
+  for (i = 0; i < 4; i++) {
+    // storing anonymous function
+    arr[i] = function () { return i; }
+  }
+
+  // returning the array.
+  return arr;
+}
+
+var get_arr = outer();
+var get_arr = outer();
+console.log(get_arr[0]());
+console.log(get_arr[1]());
+console.log(get_arr[2]());
+console.log(get_arr[3]());
 /////////////////
 
 
@@ -52,18 +76,16 @@ console.log("demo 2")
 
 ///////////////////////////
 var x = 5;
-var y = 5;
 var obj = {
   x: 10,
-  y: 20,
   sum: () => {
-    console.log(this.x + this.y);
+    console.log(this.x);
   },
   multiply() {
-    console.log(this.x * this.y)
+    console.log(this.x)
   },
   minus: function () {
-    console.log(this.x - this.y);
+    console.log(this.x);
   }
 }
 obj.sum();
@@ -292,4 +314,5 @@ function add() {
   }
   console.log(a);
 }
+add()
 ////////////////////
