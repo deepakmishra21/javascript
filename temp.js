@@ -1,3 +1,7 @@
+
+var rob = function (nums) {
+
+};
 let arr = [-1, -3, -10, 0, 60];
 let n = arr.length;
 
