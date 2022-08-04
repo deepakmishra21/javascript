@@ -125,12 +125,12 @@ function outer() {
 outer()();
 /////////////////////////////
 {
-  var moo = "Mooo"
-  let baz = "Bazz";
-  console.log(moo, baz);
+  var hello = "hello"
+  let welcome = "welcome";
+  console.log(hello, welcome);
 }
-console.log(moo);
-console.log(baz);
+console.log(hello);
+console.log(welcome);
 //////////////////////////
 var foo = "Foo";
 let bar = "Bar";
@@ -210,6 +210,15 @@ updateMe = () => {
 }
 this.updateMe();
 
+const [count, setCount] = useState(0);
+updateMe = () => {
+  setCount(count + 1)
+  setCount(count + 1)
+  setCount(count + 1)
+
+  console.log(count);
+}
+this.updateMe();
 /////////////////////////////////////////////
 
 

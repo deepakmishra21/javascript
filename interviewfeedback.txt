@@ -1,11 +1,11 @@
-Not Recommended for (SE-FS role) next round as per his experience level.
-He did not basic of JS(hoisting/arrow functions/let vs var/debouncing/promise/event loop etc)
-He says I am confuse here, did not worked etc in each statement.
-Program asked- Merge two sorted arrays
 
-Core Javascript 0.5 (He only know event binding and selectors)
-React/Angular : 1 only started working on angular
-Java/C#/node: Did not asked
+Average knowledge of Javascript as per role.
+Do not have knowledge prototype/debouncing/event loop etc in Javascript.
+
+Program Asked Fib series: Not able to solve
+Core Javascript 1.5
+React/Angular : 1.5 average knowledge in angular.
+Java/C#/node:  Did not asked
 REST APIs : NA
 SQL : NA
-Soft Skills: (Attitude,Communication, Analytical Skills) - (2,1,1)
+Soft Skills: (Attitude,Communication, Analytical Skills) - (2,2,2)
