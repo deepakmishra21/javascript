@@ -1,20 +1,28 @@
 /**
- * @param {number[]} nums
+ * @param {number} dividend
+ * @param {number} divisor
  * @return {number}
  */
-var lengthOfLIS = function (nums) {
-  debugger;
-  if (nums.length === 0) return 0;
-  let dp = [1];
-  for (let i = 1; i < nums.length; i++) {
-    let max = 0;
-    for (let j = 0; j < i; j++) {
-      if (nums[i] > nums[j]) {
-        max = Math.max(max, dp[j]);
-      }
+var divide = function (dividend, divisor) {
+    if (divisor === 0) {
+        return dividend > 0 ? 2147483647 : -2147483648;
     }
-    dp[i] = max + 1;
-  }
-  return Math.max(...dp);
+    if (dividend === 0) {
+        return 0;
+    }
+    let sign = (dividend > 0 && divisor > 0) || (dividend < 0 && divisor < 0) ? 1 : -1;
+    dividend = Math.abs(dividend);
+    divisor = Math.abs(divisor);
+    let res = 0;
+    while (dividend >= divisor) {
+        let temp = divisor;
+        let count = 1;
+        while (dividend >= (temp << 1)) {
+            temp <<= 1;
+            count <<= 1;
+        }
+        dividend -= temp;
+        res += count;
+    }
+    return sign * res;
 };
-console.log(lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]));
