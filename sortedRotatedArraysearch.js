@@ -14,7 +14,7 @@ function getIndex(arr, left, right, key) {
     return mid;
   }
   if (arr[left] < arr[mid]) {
-    if (key < arr[mid] && key >= arr[left]) {
+    if (key <= arr[mid] && key >= arr[left]) {
       return getIndex(arr, left, mid - 1, key);
     }
     return getIndex(arr, mid + 1, right, key);
