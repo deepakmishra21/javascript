@@ -22,8 +22,8 @@
 var input = 'I LOVE MY INDIA';
 var output = 'I EVOL YM AIDNI';
 //////////////////
-var arr1 = [8,1, 2, 3, 4, 4];//size of n
-var arr2 = [7,2, 3, 4, 4, 5, 5];//size of m
+var arr1 = [8, 1, 2, 3, 4, 4];//size of n
+var arr2 = [7, 2, 3, 4, 4, 5, 5];//size of m
 var expected = [2, 3, 4];//in O(n)+O(m)
 
 var arr1 = [1, 2, 3, 5, 7, 8, 9];
@@ -49,21 +49,15 @@ var out = [1, 2, 3, 3, 4, 2, 4, 5, 2, 7, -1, 3, 6, -13, 8, 4];
 // arrow function use
 // call bind apply
 // bubbling capturing
-// throatling
-// debouncing
 // Polyfill
 // prototype
 // Curring
 // Closures
 // Objects
-// Call / bind / Apply
-// ES6 Features
 // Event Loop
 // Promises
-// Event bubbling Capturing
 // Aysnc await
 // Async Defer
-// eslint
 // _proto_ vs prototype
 // Debounce / Throatling
 // Proxy and Reflect

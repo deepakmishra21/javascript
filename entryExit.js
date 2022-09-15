@@ -1,36 +1,15 @@
-const records1 = [
-  ["Martha", "exit"],
-  ["Paul", "enter"],
-  ["Martha", "enter"],
-  ["Steve", "enter"],
-  ["Martha", "exit"],
-  ["Jennifer", "enter"],
-  ["Paul", "enter"],
-  ["Curtis", "exit"],
-  ["Curtis", "enter"],
-  ["Paul", "exit"],
-  ["Martha", "enter"],
-  ["Martha", "exit"],
-  ["Jennifer", "exit"],
-  ["Paul", "enter"],
-  ["Paul", "enter"],
-  ["Martha", "exit"],
-  ["Paul", "enter"],
-  ["Paul", "enter"],
-  ["Paul", "exit"],
-  ["Paul", "exit"]
-];
-var records2 = [
-  ["Paul", "enter"],
-  ["Paul", "exit"],
-  ["Paul", "exit"],
-  ["Paul", "enter"]
-];
+const records1 =
+  [
+    ["Paul", "enter"],
+    ["Paul", "exit"],
+    ["Paul", "exit"],
+    ["Paul", "enter"]
+  ]
+  ;
 var exitHistory = {};
 var enterHistory = {};
 var exit = {};
 var enter = {};
-debugger;
 records1.forEach(m => {
   let name = m[0];
   let status = m[1];
