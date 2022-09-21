@@ -1,13 +1,23 @@
-Raised the bar in coding but below the bar in Javascript as his experience level.
-Average knowledge of Javascript as per role.
-Not very clear about var/let hoisting/ constructor functions/ call bind apply.
-He needs to brush up his JS knowledge.
+Below the Bar. He needs to brush up things.
+He is ok in design but did not code from 2 years.
+So as per CV leave the coding after 6 years of experience.
 
 
-Program Asked: common element with in 2 array, able to do in O(n)+O(m);
-Core Javascript 1.5
-React/Angular : 2
-Java/C#/node: 1.5
+Program Pseudo Code- Find the count of elements of small array in large array did
+
+Design Question Asked: Below the bar, Ecom website product search page performance optimization scaling caching etc
+Core Javascript Lacking basic fundamentals in JavaScript (need to brush up)
+React/Angular : Lacking the fundamentals
+Java/C#/node: asked few questions
 REST APIs : NA
 SQL : NA
-Soft Skills: (Attitude,Communication, Analytical Skills) - (1.5,1.5,1.5)
+Soft Skills: (Attitude,Communication, Analytical Skills) - (2,2,1)
+
+
+"- Lacking basic fundamentals in JavaScript (need to brush up)
+- Could not explain - Webpack, Babel etc.
+- Asked a simple system design problem - answered okayish
+- Architecture of React App - Average Explanation.
+- Soft skills are good but need to dig deeper into technical side of things.
+
+Recommendation - No"

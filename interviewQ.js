@@ -32,6 +32,10 @@ var arr2 = [2, 4, 6, 8];
 var out = [1, 2, 2, 3, 4, 5, 6, 7, 8];//Merge both the array and it should be sorted
 //Write a program to solve the problem.
 
+// Find the count of elements of small array in large array
+// var arr=[1, 3, 6, 2,.....,n]//Size is bit large m
+// var digits = [4, 6, 8, 1, 7]//small size of n
+// Count the digits occurance in arr.
 
 //find common element
 /////////////////
@@ -39,19 +43,20 @@ var a = [1, 2, 3, [3, 4, [2, 4], [5, 2, [7, -1], 3, [6, [-13, 8], 4]]]];
 var out = [1, 2, 3, 3, 4, 2, 4, 5, 2, 7, -1, 3, 6, -13, 8, 4];
 //Design clock in browser
 //Auto complete real time problem  using debounce
-//let vs var
-//null check in js
-//terniary conditions
-//Self invoking function
-// Hoisting
+////////////////////
+//let vs var   done(Mayank)
+// reference error vs syntax error vs type error done(Mayank)
+//null check in js   done(Mayank)
+// call bind apply done(Mayank)
+// Curring done(Mayank)
+// bubbling capturing done(Mayank)
+//Self invoking function done(Mayank)
+// Hoisting done(Mayank)
+//terniary conditions https://medium.com/@ezekielphlat/a-simpler-understanding-of-the-short-circuit-operators-in-javascript-d275a313cef1
 // feature of es6
 // local vs session
 // arrow function use
-// call bind apply
-// bubbling capturing
 // Polyfill
-// prototype
-// Curring
 // Closures
 // Objects
 // Event Loop
@@ -61,6 +66,9 @@ var out = [1, 2, 3, 3, 4, 2, 4, 5, 2, 7, -1, 3, 6, -13, 8, 4];
 // _proto_ vs prototype
 // Debounce / Throatling
 // Proxy and Reflect
+// GC
+//es lint
+
 
 
 ////////////////////////////////
