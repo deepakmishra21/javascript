@@ -18,8 +18,7 @@ function jumpingOnClouds(array) {
     if (step_2 == 0) {
       count = count + 1;
       index = index + 2;
-    }
-    else if (step_1 == 0) {
+    } else if (step_1 == 0) {
       count = count + 1;
       index = index + 1;
     }
