@@ -1,0 +1,159 @@
+const promise1 = Promise.resolve(1);
+const promise2 = 43;
+const promise3 = new Promise((resolve, reject) => {
+  resolve(42);
+});
+
+//polyfill for all settled
+
+Promise.myAllSettled = function (promises) {
+  const mappedPromises = promises.map((promise) => {
+    return Promise.resolve(promise).then((value) => {
+      return {
+        status: 'fulfilled',
+        value
+      };
+    }).catch((reason) => {
+      return {
+        status: 'rejected',
+        reason
+      };
+    })
+  });
+  return Promise.all(mappedPromises);
+}
+
+Promise.myAllSettled([promise1, promise2, promise3, Promise.reject('error!!')]).then((result) => {
+  console.log(result);
+}).catch((error) => console.log(error));
+
+
+//polyfill for all
+
+Promise.myAll = function (values) {
+  let results = [];
+  let completed = 0;
+  return new Promise((resolve, reject) => {
+    values.forEach((value, index) => {
+      Promise.resolve(value).then((result) => {
+        completed++;
+        results[index] = result;
+        if (completed === values.length) {
+          resolve(results);
+        }
+      }).catch(error => reject(error));
+    });
+  });
+}
+
+Promise.myAll([promise1, promise2, promise3, Promise.reject('error!!')]).then((result) => {
+  console.log(result);
+}).catch((error) => console.log(error));
+
+//polyfill for race
+
+Promise.myRace = function (promises) {
+
+  return new Promise((resolve, reject) => {
+    promises.forEach((promise) => {
+      Promise.resolve(promise).then(resolve, reject);
+    })
+  })
+}
+
+Promise.myRace([promise1, promise2, promise3, Promise.reject('error!!')]).then((result) => {
+  console.log(result);
+}).catch((error) => console.log(error));
+
+//polyfill for any
+
+Promise.myAny = function (promises) {
+  const error = new AggregateError([new Error("same Error")], "All promises are rejected");
+  let rejectedCount = 0;
+  return new Promise((resolve, reject) => {
+    if (promises.length == 0) reject(error);
+    return promises.forEach((promise) => {
+      Promise.resolve(promise).then((values) => {
+        resolve(values);
+      }).catch((err) => {
+        rejectedCount++;
+        if (rejectedCount == promises.length)
+          reject(error);
+      })
+    })
+  })
+}
+
+Promise.myAny([promise2, promise3, Promise.reject('error!!')]).then((result) => {
+  console.log(result);
+}).catch((error) => console.log(error));
+
+//polyfill for call
+
+Function.prototype.customCall = function (obj, ...args) {
+  obj.fnRef = this;
+  obj.fnRef(...args);
+}
+
+//polyfill for bind
+
+Function.prototype.customBind = function (obj) {
+  obj.fnRef = this;
+  return function (...args) {
+    obj.fnRef(...args);
+  }
+}
+
+//polyfill for apply
+
+Function.prototype.customApply = function (obj, args) {
+  obj.fnRef = this;
+  obj.fnRef(...args);
+}
+
+//polyfill for foreach
+
+Array.prototype.ourForEach = function (callBack) {
+  for (let i = 0; i < this.length; i++) {
+    callBack(this[i]);
+  }
+};
+names.ourForEach(consoleFunc);
+
+//polyfill for map
+
+const users = [1, 2, 3, 4, 5];
+Array.prototype.ourMap = function (callBack) {
+  const newArray = [];
+  for (let i = 0; i < this.length; i++) {
+    newArray.push(callBack(this[i]));
+  }
+  return newArray;
+};
+console.log(users.ourMap(double));
+
+
+//polyfill for reduce
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+function additionFunction(accumulator, current) {
+  accumulator = accumulator + current;
+  return accumulator;
+}
+
+const sum = numbers.reduce(additionFunction, 0);
+
+console.log(sum);
+
+//polyfill for filter
+
+Array.prototype.ourFilter = function (callBack) {
+  let output = [];
+  for (let i = 0; i < this.length; i++) {
+    if (callBack(this[i])) {
+      output.push(this[i]);
+    }
+  }
+  return output;
+};
