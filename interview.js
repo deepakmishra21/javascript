@@ -86,7 +86,7 @@ var obj = {
   },
   minus: function () {
     console.log(this.x);
-  }p
+  }
 }
 obj.sum();
 obj.multiply()
@@ -108,7 +108,7 @@ var car = function (model, price) {
   return model + "_" + price
 }
 var car1 = new car("maruti", 1000);
-var car2 = car("maruti", 2000);
+var car2 = car("maruti", 1000);
 console.log(car1);
 console.log(car2);
 //////////////////////////////

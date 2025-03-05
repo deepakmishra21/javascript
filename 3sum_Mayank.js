@@ -2,7 +2,9 @@ console.log(threeSum([0, 0, 0, 0]));
 
 function threeSum(nums) {
   var result = [];
-  nums.sort((a, b) => { return a - b; });
+  nums.sort((a, b) => {
+    return a - b;
+  });
 
   for (let i = 0; i < nums.length; i++) {
     var l = i + 1;
@@ -13,12 +15,8 @@ function threeSum(nums) {
         result.push([nums[i], nums[l], nums[r]]);
         l++;
         r--;
-      }
-      else if (sum < 0)
-        l++;
-      else if (sum > 0)
-        r--;
-
+      } else if (sum < 0) l++;
+      else if (sum > 0) r--;
     }
   }
   debugger;

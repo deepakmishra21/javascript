@@ -19,3 +19,5 @@ var fizzBuzz = function (n) {
 
 };
 console.log(fizzBuzz(14))
+//replace all " with space
+var a=a.replace(/"/g,"");
